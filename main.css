@@ -44,25 +44,52 @@ Section {
 
 .flags:nth-of-type(6) {
     background: linear-gradient(180deg, #000000 33.3%, #ed2939 33.3%, #ed2939 66.6%, #ffc400 66.6%);
-    border-top: 17.5 pxsolid#000000;
-    border-bottom: 17.5 pxsolid #000000;
+    border-top: 17.5px solid #002654;
+    border-bottom: 17.5px solid #000000;
 } 
 
-.radial:first-of-type {
-    background: -webkit-repeating-radial-gradient(circle, green);    
-    border-left: 17.5 pxsolid #000000;
-    border-right: 17.5 pxsolid #000000;
+.radial:only-of-type {
+    background-image: repeating-radial-gradient(
+        blue 30%,
+        orange 20%,
+        white 50%,
+        black 10%,
+        violet 60%,
+        pink 17%,
+        purple 30%);
+        border-left: 17.5px outset royalblue;
+        border-right: 17.5px outset royalblue;
 }
 
-.conic:first-of-type {
-    
+.conic:only-of-type {    
+    background-image: conic-gradient(
+        red 20%
+        blue 20%
+        blue 55%
+        magenta 55%
+        magenta 66%
+        moccasin 66%
+        moccasin 79%
+        skyblue 79%
+        skyblue 89%
+        purple 89%);
+    border-top: 17.5px double #000000;
+    border-bottom: 17.5px double #000000;
 }
 
+h1 {
+    font-family: 'Quick-sand', sans-serif;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 p {
     font-family: 'Borel', cursive;
     font-weight: 200;
     background-color: rgb(50, 250, 0);
-    background-color: hsla(267, 100%, 13% 0.664 );solid
+    background-color: hsla(267, 100%, 13% 0.664 );
 }
 
 .flags:nth-of-type(9) {
