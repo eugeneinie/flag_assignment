@@ -5,11 +5,51 @@ html {
 main {
     background-color: #333;    
     font-size: 20px;
+    width: auto;
 }
 
 Section {
     margin: 10px auto;
     width: 300px;
     height: 300px;
-    border: .3rem;
+    border: .9rem;
+}
+
+.flags:nth-of-type(1) {
+    width: 500px;
+    background: linear-gradient(90deg, #1b7339 33.3%, #ffffff 33.3%, #ffffff 66.6%, #1b7339 66.6%);
+}
+
+.flags:nth-of-type(2) {
+    width: 500px;
+    background: linear-gradient(90deg, #ffffff 33.3%, #ffffff 33.3%, #ffffff 66.6%, #ffffff 66.6%); 
+    /*background: linear-gradient(90deg #bc002d); border-radius: 50%;*/
+}
+
+.flags:nth-of-type(3) {
+    width: 500px;
+    background: linear-gradient(90deg, #002654 33.3%, #ffffff 33.3%, #ffffff 66.6%, #ed2939 66.6%); 
+} 
+
+.flags:nth-of-type(4) {
+    width: 500px;
+    background: linear-gradient(180deg, #ce1126 33.3%, #ffffff 33.3%, #ffffff 38.3%, #0c1c8c 38.3%, #0c1c8c 61.6%, #ffffff 61.6%, #ffffff 66.6%, #3a772b 66.6%);
+} 
+
+.flags:nth-of-type(5) {
+    width: 500px;
+    background: linear-gradient(180deg, #009e60 33.3%, #fcd116 33.3%, #fcd116 66.6%, #4664b2 66.6%);
+} 
+
+.flags:nth-of-type(6) {
+    width: 500px;
+    background: linear-gradient(180deg, #000000 33.3%, #ed2939 33.3%, #ed2939 66.6%, #ffc400 66.6%);
+} 
+
+.radial:first-of-type {
+
+}
+
+.conic:first-of-type {
+
 }
