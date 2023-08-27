@@ -3,6 +3,7 @@
 
 html {
     font-size: 35px;
+    background-color: #333;
 }
 
 Section {
@@ -13,65 +14,69 @@ Section {
 }
 
 .flags:nth-of-type(1) {
-    background: linear-gradient(90deg, #1b7339 33.3%, #ffffff 33.3%, #ffffff 66.6%, #1b7339 66.6%);
-    border-left: 17.5px solid #000000;
-    border-right: 17.5px solid #000000;
+    background: linear-gradient(90deg, #1b7339 33.3%, #fff 33.3%, #fff 66.6%, #1b7339 66.6%);
+    border-left: 17.5px solid #000;
+    border-right: 17.5px solid #000;
 }
 
 .flags:nth-of-type(2) {    
-    background: radial-gradient( circle, #bc002d 25%, #ffffff 25%);
-    border-top: 17.5px solid #000000;
-    border-bottom: 17.5px solid #000000;
+    background: radial-gradient(circle, #bc002d 25%, #fff 25%);
+    border-top: 17.5px solid #000;
+    border-bottom: 17.5px solid #000;
 }
 
 .flags:nth-of-type(3) {
-    background: linear-gradient(90deg, #002654 33.3%, #ffffff 33.3%, #ffffff 66.6%, #ed2939 66.6%); 
-    border-left: 17.5px solid #000000;
-    border-right: 17.5px solid #000000;
+    background: linear-gradient(90deg, #002654 33.3%, #fff 33.3%, #fff 66.6%, #ed2939 66.6%); 
+    border-left: 17.5px solid #000;
+    border-right: 17.5px solid #000;
 } 
 
 .flags:nth-of-type(4) {
-    background: linear-gradient(180deg, #ce1126 33.3%, #ffffff 33.3%, #ffffff 38.3%, #0c1c8c 38.3%, #0c1c8c 61.6%, #ffffff 61.6%, #ffffff 66.6%, #3a772b 66.6%);
-    border-top: 17.5px solid #000000;
-    border-bottom: 17.5px solid #000000;
+    background: linear-gradient(180deg, #ce1126 33.3%, #fff 33.3%, #fff 38.3%, #0c1c8c 38.3%, #0c1c8c 61.6%, #fff 61.6%, #fff 66.6%, #3a772b 66.6%);
+    border-top: 17.5px solid #000;
+    border-bottom: 17.5px solid #000;
 } 
 
 .flags:nth-of-type(5) {
     background: linear-gradient(180deg, #009e60 33.3%, #fcd116 33.3%, #fcd116 66.6%, #4664b2 66.6%);
-    border-left: 17.5px solid #000000;
-    border-right: 17.5px solid #000000;
+    border-left: 17.5px solid #000;
+    border-right: 17.5px solid #000;
 } 
 
-.flags:nth-of-type(6) {
-    background: linear-gradient(180deg, #000000 33.3%, #ed2939 33.3%, #ed2939 66.6%, #ffc400 66.6%);
+.flags:nth-of-type(6) {        
+    background: linear-gradient(180deg, #000 33.3%, #ed2939 33.3%, #ed2939 66.6%, #ffc400 66.6%);
+    color: rgb(255, 221, 0);
     border-top: 17.5px solid #002654;
-    border-bottom: 17.5px solid #000000;
+    border-bottom: 17.5px solid #000;
 } 
 
-.radial:only-of-type {
-    background-image: repeating-radial-gradient(
+.radial:nth-of-type(7) {
+    /* background-image: repeating-radial-gradient( 
+        red 30%,
+        orange 30%,
+        yellow 30%,
+        green 30%,
         blue 30%,
-        orange 20%,
-        white 50%,
-        black 10%,
-        violet 60%,
-        pink 17%,
-        purple 30%);
-        border-left: 17.5px outset royalblue;
-        border-right: 17.5px outset royalblue;
+        indigo 30%,
+        violet 30%); */
+        border-left: 17.5px /* outset */ solid #000;
+        border-right: 17.5px /* outset */ solid #000;
+        /* background-image: linear-gradient(#f00, #00f, #0f0, #ff0, #000);  */
+        background-image: radial-gradient(circle, red, orange, green, blue, indigo, violet);
 }
 
-.conic:only-of-type {    
+.conic:nth-of-type(8) {    
+    color: #f00, #00f, #0f0, #ff0, #000;
     background-image: conic-gradient(
-        red 20%
-        blue 20%
-        blue 55%
-        magenta 55%
-        magenta 66%
-        moccasin 66%
-        moccasin 79%
-        skyblue 79%
-        skyblue 89%
+        red 20%,
+        blue 20%,
+        blue 55%,
+        magenta 55%,
+        magenta 66%,
+        moccasin 66%,
+        moccasin 79%,
+        skyblue 79%,
+        skyblue 89%,
         purple 89%);
     border-top: 17.5px double #000000;
     border-bottom: 17.5px double #000000;
@@ -79,23 +84,34 @@ Section {
 
 h1 {
     font-family: 'Quick-sand', sans-serif;
+    /*font-family: 'Borel', cursive;*/
     height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-p {
+
+h2 {
+    font-family: 'Borel', cursive;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* p {    
     font-family: 'Borel', cursive;
     font-weight: 200;
     background-color: rgb(50, 250, 0);
-    background-color: hsla(267, 100%, 13% 0.664 );
-}
+    background-color: hsla(267, 100%, 13% 0.664);
+}*/
 
 .flags:nth-of-type(9) {
     background-image: url(./images__2_-removebg-preview\ \(1\).png), linear-gradient(180deg, #ef3340 33.3%, #ffd100 33.3%, #ffd100 66.6%, #009739 66.6%);
     background-position: center;
-    background-size: 200px, contain;
+    background-size: 215px, contain;
     background-repeat: no-repeat;    
     border-left: 17.5px solid #000000;
     border-right: 17.5px solid #000000;
