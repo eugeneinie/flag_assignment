@@ -23,7 +23,7 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
     background-image: url(./images/star-removebg-preview.png), url(./images/star-removebg-preview.png), url(./images/star-removebg-preview.png), url(./images/star-removebg-preview.png), url(./images/star-removebg-preview.png), radial-gradient(red, red);
-    background-size: 80px, 20px, 20px, 20px, 20px contain;
+    background-size: 80px, 20px, 20px, 20px, 20px, contain;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
     background-position: 30px 20px, 100px 10px, 120px 35px, 120px 70px, 90px 100px;
 }
@@ -33,7 +33,7 @@ section:nth-of-type(4) {
     overflow: auto;
     border: 15px groove black;
     padding: 20px 15px 10px 55px;
-    margin: 4em auto;
+    /* margin: 4em auto; */
     /*padding: left 20px;*/
 }
 
